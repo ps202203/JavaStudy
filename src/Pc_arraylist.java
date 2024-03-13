@@ -18,5 +18,18 @@ public class Pc_arraylist {
         // (ArrayList를 인자로 받는 API를 사용하기 위해서 Collection 타입 변환이 필요할 때 많이 사용)
         ArrayList<Integer> list3 = new ArrayList<>(list2);
 
+        //ArrayList 요소 추가
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("1");
+        list1.add("2");
+
+        ArrayList<String> list4 = new ArrayList<>();
+        list4.add("3");
+        list4.add("4");
+
+        list1.addAll(list4); // list1에 list2의 내용을 추가한다.
+
+        System.out.println(list1); // [1, 2, 3, 4]
+
     }
 }
