@@ -6,7 +6,10 @@ interface MyFunction {
 
 public class Pc_Lambda {
     public static void main(String[] args) {
-        MyFunction myfunc = (str) -> System.out.println(str);
+        MyFunction myfunc = System.out::println;
+        MyFunction myfunc2 = (str) -> System.out.println(str);
+
         myfunc.print("Hello World");
+        myfunc2.print("Hello World2");
     }
 }
